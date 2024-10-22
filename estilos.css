@@ -1,0 +1,86 @@
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #00BFFF; 
+}
+
+td {
+    background-color: #FFA07A; 
+}
+
+#Calculo-edad {
+    display: flex;               
+    align-items: center;         
+}
+
+#Calculo-edad h5 {
+    margin: 0;                   
+    margin-right: 10px;          
+}
+
+#Calculo-edad button,
+#Calculo-edad input {
+    margin-left: 10px;           
+}
+
+
+
+#form-datos {
+    display: block;  
+    background-color: #e0ff78; 
+    margin-bottom: 10px;
+ 
+    
+}
+#form-datos label {
+    margin-right: 30px;
+}
+
+#form-datos div {
+    display: block;
+    margin-bottom: 10px;
+}
+#form-ABM {
+    display: none;  
+    background-color: #90EE90;  
+    padding: 20px;  
+}
+
+#form-ABM div {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+#form-ABM label {
+    display: inline-block;
+    width: 100px;  
+    text-align: left;
+}
+
+#form-ABM input {
+    display: inline-block;
+    margin-left: 10px;  
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+
+.checklist-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checklist-item {
+    margin-right: 20px; 
+    display: inline-block;
+}

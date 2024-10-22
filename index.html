@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Recuperatorio</title>
+</head>
+<body>
+
+    <form id="form-datos">
+        <h2>Form datos</h2>
+        <label for="filtro">Filtrar por:</label>
+        <select id="filtro" name="filtro">
+            <option value="0">Todos</option>
+            <option value="1">Futbolista</option>
+            <option value="2">Profesional</option>
+        </select>
+
+        <div id="checklist">
+            <label><input type="checkbox" name="checklist" value="id" checked> ID </label>
+            <label><input type="checkbox" name="checklist" value="nombre" checked> nombre </label>
+            <label><input type="checkbox" name="checklist" value="apellido" checked> apellido </label>
+            <label><input type="checkbox" name="checklist" value="edad" checked> Edad</label>
+
+            <span class="Profesional" style="display: none;">
+            <label><input type="checkbox" name="checklist" value="titulo" > Titulo </label>
+            <label><input type="checkbox" name="checklist" value="facultad" >facultad </label>
+            <label><input type="checkbox" name="checklist" value="añoGraduacion" >Año de Graduacion </label>
+
+            </span>
+
+            <span class="Futbolista" style="display: none;">
+            <label><input type="checkbox" name="checklist" value="equipo" > Equipo</label>
+            <label><input type="checkbox" name="checklist" value="posicion" > Posicion</label>
+            <label><input type="checkbox" name="checklist" value="cantidadGoles" >cantidadGoles</label>
+            </span>
+        </div>
+
+        <div id="Calculo-edad">
+            <h5 >Promedio de edad </h5>
+            <button id="calcular-edad" type="button" >Calcular</button>
+            <input type="text" id="promedio-edad" readonly >
+        </div>
+
+        <table id="tabla-Personas">
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br></br>
+        <button id="btn-agregar" type="button">Agregar</button>
+    </form>
+
+    <div id="form-ABM" style="display: none;">
+        <h2>Form ABM</h2>
+        <div class="id">
+            <label for="abm-id">ID:</label>
+            <input type="number" id="abm-id" readonly> 
+        </div>
+
+        <div class="nombre">
+            <label for="abm-nombre">nombre:</label>
+            <input type="text" id="abm-nombre" name="nombre"> 
+        </div>
+
+        <div class="apellido">
+            <label for="abm-nombre">apellido:</label>
+            <input type="text" id="abm-apellido" name="apellido"> 
+        </div>
+
+        <div class="edad">
+            <label for="abm-edad">Edad:</label>
+            <input type="number" id="abm-edad" name="edad"> 
+        </div>
+
+
+
+        <select id="filtro-abm" name="filtro-abm">
+            <option value="0">Todos</option>
+            <option value="1">Futbolista</option>
+            <option value="2">Profesional</option>
+        </select>
+        <div id="campos_faltantes">
+            <span class="Profesional" style="display: none;">
+                <div class="campo">
+                    <label for="abm-titulo">Titulo:</label> 
+                    <input type="string" id="abm-titulo" name="titulo"> 
+                </div>
+                <div class="campo">
+                    <label for="abm-facultad">facultad:</label> 
+                    <input type="string" id="abm-facultad" name="facultad"> 
+                </div>
+                <div class="campo">
+                    <label for="abm-añoGraduacion">añoGraduacion:</label> 
+                    <input type="number" id="abm-añoGraduacion" name="añoGraduacion"> 
+                </div>
+
+            </span>
+            <span class="Futbolista" style="display: none;">
+                <div class="campo">
+                    <label for="abm-equipo">Equipo:</label>
+                    <input type="string" id="abm-equipo" name="equipo"> 
+                </div>
+
+                <div class="campo">
+                    <label for="abm-posicion">Posicion:</label>
+                    <input type="string" id="abm-posicion" name="posicion"> 
+                </div>
+
+                <div class="campo">
+                    <label for="abm-cantidadGoles">cantidadGoles:</label> 
+                    <input type="number" id="abm-cantidadGoles" name="cantidadGoles"> 
+                </div>
+            </span>
+        </div>
+        <button id="btn-cancelar" type="button">Cancelar</button>
+        <button id="btn-modificar" type="button">Modificar</button>
+        <button id="btn-agregar-abm" type="button">Agregar</button>
+        <button id="btn-eliminar" type="button">Eliminar</button>
+
+        
+    </form>
+
+</body>
+<script src="funciones.js"></script>
+
+</html>
