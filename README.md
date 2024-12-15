@@ -9,3 +9,5 @@ Una vez puesto los valores correctos podran funcionar los botones Agregar/Modifi
 b) Estan todas las columnas en el Form Datos, si esta marcado Todos como opcion de filtro
 entonces solo mostrara las comunes de clase Persona, una vez que seleccione Futbolista/Profesional
 se muestra el resto de columnas correspondientes.
+
+![imagen recuperatorio](recuperatorio.png)
